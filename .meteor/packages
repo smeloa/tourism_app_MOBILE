@@ -9,6 +9,7 @@ mobile-experience       # Packages for a great mobile UX
 mongo                   # The database Meteor supports right now
 blaze-html-templates    # Compile .html files into Meteor Blaze views
 reactive-var            # Reactive variable for tracker
+reactive-dict           # Reactive dictionary for tracker
 jquery                  # Helpful client-side library
 tracker                 # Meteor's client-side reactive programming library
 
@@ -17,5 +18,34 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-autopublish             # Publish all data to the clients (for prototyping)
-insecure                # Allow all DB writes from clients (for prototyping)
+
+# BASE
+accounts-base
+kadira:flow-router
+kadira:blaze-layout
+accounts-password
+alanning:roles
+session
+check
+
+# BACKEND
+aldeed:simple-schema
+dburles:collection-helpers
+aldeed:collection2
+mdg:validated-method
+themeteorchef:jquery-validation
+
+# FRONTEND
+semantic:ui
+flemay:less-autoprefixer
+lepozepo:accounting
+momentjs:moment
+themeteorchef:bert
+swiper:swiper
+
+# TESTING
+meteortoys:allthings
+
+# MOBILE
+indesign:ratchet
+fortawesome:fontawesome
