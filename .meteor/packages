@@ -36,8 +36,6 @@ mdg:validated-method
 themeteorchef:jquery-validation
 
 # FRONTEND
-semantic:ui
-flemay:less-autoprefixer
 lepozepo:accounting
 momentjs:moment
 themeteorchef:bert
