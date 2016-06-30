@@ -1,7 +1,8 @@
-import {Meteor} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-password';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { Stylus } from 'meteor/stylus';
 
 //Imports to load initial templates
 import '../../ui/layouts/MainLayout.js';

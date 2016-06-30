@@ -1,0 +1,12 @@
+body {
+  background-color: red;
+}
+
+.start-buttons {
+  margin-top: 70%;
+}
+
+.login, .create-account {
+  width: 70%;
+  font-size: 1.25em;
+}
