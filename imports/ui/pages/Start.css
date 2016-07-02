@@ -1,12 +1,44 @@
-body {
-  background-color: red;
+.content {
+ 	background-color: #455A64;
 }
 
-.start-buttons {
-  margin-top: 70%;
+.logo-start {
+	margin-top: 20%;
+}
+
+.start-message {
+	font-family: 'Lato', sans-serif;
+  	font-weight: 900;
+	color: #CFD8DC;
+}
+
+.login-form {
+	width: 70%;
+	margin-top: 10%;
 }
 
 .login, .create-account {
-  width: 70%;
-  font-size: 1.25em;
+  	width: 70%;
+  	font-family: 'Lato', sans-serif;
+  	font-size: 1.25em;
+  	font-weight: 300;
+}
+
+.login {
+	background-color: #FF9800;
+	border-color: #FF9800;
+}
+
+.login:active {
+	background-color: #CFD8DC;
+}
+
+.create-account {
+	margin-top: 1.5%;
+	background-color: #455A64;
+	border: 2px solid #FF9800;
+}
+
+.create-account:active {
+	background-color: #CFD8DC;
 }

@@ -11,9 +11,9 @@ import '../../ui/pages/Start.js';
 //Frontend routes
 
 FlowRouter.route('/', {
-  name: 'start',
-  title: 'Start',
-  action(params) {
-    BlazeLayout.render("MainLayout", {content: "Start"});
-  }
+  	name: 'start',
+  	title: 'Start',
+  	action(params) {
+    	BlazeLayout.render("MainLayout", {content: "Start"});
+	}
 });

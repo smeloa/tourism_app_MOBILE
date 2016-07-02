@@ -1,9 +1,15 @@
 <template name="Start">
-  <div class="container start-buttons" align="center">
-    <button class="btn btn-link login">
-      <span class="icon icon-right"></span>
-      LOGIN
-    </button>
-    <button class="btn btn-primary create-account">Create account</button>
-  </div>
+	<div class="content" align="center">
+  		<img src="/images/tourist-map.png" alt="tourist-map-logo" class="logo-start">
+  		<p class="start-message">What will you discover today?</p>
+  		<form class="login-form">
+  			<input type="text" placeholder="Email">
+  			<input type="text" placeholder="Password">
+  		</form>
+    	<div class="start-buttons">
+	      	<button class="btn btn-primary login">LOGIN</button>
+	      	<button class="btn btn-primary create-account">REGISTER</button>
+	      	<p style="margin-top:10%" id="forgot-password">Forgot Password</p>
+    	</div>
+  	</div>
 </template>
