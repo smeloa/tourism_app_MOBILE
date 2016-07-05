@@ -7,6 +7,7 @@ import { Stylus } from 'meteor/stylus';
 //Imports to load initial templates
 import '../../ui/layouts/MainLayout.js';
 import '../../ui/pages/Start.js';
+import '../../ui/pages/CreateAccount/CreateAccount.js';
 
 //Frontend routes
 
@@ -15,5 +16,13 @@ FlowRouter.route('/', {
   	title: 'Start',
   	action(params) {
     	BlazeLayout.render("MainLayout", {content: "Start"});
+	}
+});
+
+FlowRouter.route('/createaccount', {
+  	name: 'createaccount',
+  	title: 'Create Account',
+  	action(params) {
+    	BlazeLayout.render("MainLayout", {content: "CreateAccount"});
 	}
 });
