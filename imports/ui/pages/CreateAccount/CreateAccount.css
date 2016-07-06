@@ -3,6 +3,34 @@
   box-shadow: none;
 }
 
+.icon {
+  color: #FF9800;
+}
+
 .option-register {
   width: 40%;
+  margin-top: 5%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  background-color: #455A64;
+  border: 2px solid #FF9800;
+}
+
+.on {
+  background-color: #FF9800;
+  border-color: #FF9800;
+}
+
+.hidden {
+  display: none
+}
+
+.register {
+  width: 70%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  background-color: #FF9800;
+  border-color: #FF9800;
 }

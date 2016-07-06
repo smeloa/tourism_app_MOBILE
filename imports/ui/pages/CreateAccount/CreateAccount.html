@@ -1,19 +1,29 @@
 <template name="CreateAccount">
   <header class="bar bar-nav">
-    <a class="icon icon-left-nav pull-left"></a>
+    <a class="icon icon-left-nav pull-left" href="/"></a>
   </header>
   <div class="content content-start" align="center">
     <div class="register-types">
-      <button class="btn btn-primary option-register explorer">EXPLORER</button>
+      <button class="btn btn-primary option-register explorer on">EXPLORER</button>
       <button class="btn btn-primary option-register guide">GUIDE</button>
     </div>
     <div>
       <form id="registerExplorerForm">
-
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email">
+  			<input type="text" placeholder="Password">
+        <input type="date">
       </form>
-      <form id="registerExplorerForm" class="hidden">
-
+      <form id="registerGuideForm" class="hidden">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email">
+  			<input type="text" placeholder="Password">
+        <input type="date">
+        <input type="text" placeholder="type of tours">
       </form>
     </div>
+    <button class="btn btn-primary register">REGISTER</button>
   </div>
 </template>
