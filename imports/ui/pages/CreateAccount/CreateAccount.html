@@ -9,21 +9,21 @@
     </div>
     <div>
       <form id="registerExplorerForm">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email">
-  			<input type="text" placeholder="Password">
-        <input type="date">
+        <input name="firstname" type="text" placeholder="First Name" required>
+        <input name="lastname" type="text" placeholder="Last Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="phone" type="number" placeholder="Telephone" required>
+        <input name="password" type="password" placeholder="Password" required>
+        <button class="btn btn-primary register">REGISTER</button>
       </form>
       <form id="registerGuideForm" class="hidden">
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="Email">
-  			<input type="text" placeholder="Password">
-        <input type="date">
-        <input type="text" placeholder="type of tours">
+        <input name="firstname" type="text" placeholder="First Name" required>
+        <input name="lastname" type="text" placeholder="Last Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="phone" type="number" placeholder="Telephone" required>
+  			<input name="password" type="password" placeholder="Password" required>
+        <button class="btn btn-primary register">REGISTER</button>
       </form>
     </div>
-    <button class="btn btn-primary register">REGISTER</button>
   </div>
 </template>
