@@ -29,25 +29,65 @@ Template.CreateAccount.events({
         $('#registerExplorerForm').removeClass('hidden');
     },
 
-    // 'submit #registerExplorerForm' (event) {
-    //     event.preventDefault();
+    'submit #registerExplorerForm' (event) {
+        event.preventDefault();
 
-    //     const data = {
-    //       email: event.target.email.value,
-    //       password: event.target.password.value,
-    //       profile: {
-    //         firstname: event.target.firstname.value,
-    //         lastname: event.target.lastname.value,
-    //         phone: event.target.phone.value,
-    //         role: "explorer",
-    //         source: "mobile"
-    //       }
-    //     };
+        const data = {
+          email: event.target.email.value,
+          password: event.target.password.value,
+          profile: {
+            firstname: event.target.firstname.value,
+            lastname: event.target.lastname.value,
+            phone: event.target.phone.value,
+            role: "explorer",
+            source: "mobile"
+          }
+        };
 
-    //     Accounts.createUser(data, function(error) {
-    //       if (error) {
-            
-    //       }
-    //     });
-    // }
+        Accounts.createUser(data, function(error) {
+          if (error) {
+            if (error.reason == "Email already exists.") {
+              setTimeout(function() {
+                Bert.alert("The email is already registered", 'danger');
+              }, 500);
+            }
+          } else {
+            setTimeout(function() {
+              Bert.alert('Welcome ' + Meteor.user().profile.firstname, 'success');
+            }, 500);
+            FlowRouter.go('/usermain')
+          }
+        });
+    },
+
+    'submit #registerGuideForm' (event) {
+        event.preventDefault();
+
+        const data = {
+          email: event.target.email.value,
+          password: event.target.password.value,
+          profile: {
+            firstname: event.target.firstname.value,
+            lastname: event.target.lastname.value,
+            phone: event.target.phone.value,
+            role: "guide",
+            source: "mobile"
+          }
+        };
+
+        Accounts.createUser(data, function(error) {
+          if (error) {
+            if (error.reason == "Email already exists.") {
+              setTimeout(function() {
+                Bert.alert("The email is already registered", 'danger');
+              }, 500);
+            }
+          } else {
+            setTimeout(function() {
+              Bert.alert("Welcome " + Meteor.user().profile.firstname, 'success');
+            }, 500);
+            FlowRouter.go('/usermain')
+          }
+        });
+    }
 });
