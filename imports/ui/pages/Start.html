@@ -2,14 +2,12 @@
 	<div class="content content-start" align="center">
   		<img src="/images/tourist-map.png" alt="tourist-map-logo" class="logo-start">
   		<p class="start-message">What will you discover today?</p>
-  		<form class="login-form">
-  			<input type="text" placeholder="Email">
-  			<input type="text" placeholder="Password">
+  		<form class="login-form" id="loginForm">
+  			<input name="email" type="text" placeholder="Email">
+  			<input name="password" type="text" placeholder="Password">
+				<button class="btn btn-primary login">LOGIN</button>
   		</form>
-    	<div class="start-buttons">
-	      	<button class="btn btn-primary login">LOGIN</button>
-	      	<button class="btn btn-primary create-account">REGISTER</button>
+    	<button class="btn btn-primary create-account">REGISTER</button>
 	      	<!-- <p style="margin-top:10%" id="forgot-password">Forgot Password</p> -->
-    	</div>
-  	</div>
+	</div>
 </template>

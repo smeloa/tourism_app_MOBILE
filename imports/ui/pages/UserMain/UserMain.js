@@ -1,6 +1,8 @@
 import './UserMain.html';
 import './UserMain.css';
 
+import '../../components/NavBar/NavBar.js';
+
 import { $ } from 'meteor/jquery';
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';

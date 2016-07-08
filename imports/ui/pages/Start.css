@@ -8,7 +8,7 @@
 
 .start-message {
 	font-family: 'Lato', sans-serif;
-  	font-weight: 900;
+  font-weight: 900;
 	color: #CFD8DC;
 }
 
@@ -18,13 +18,13 @@ form {
 }
 
 .login, .create-account {
-  	width: 70%;
   	font-family: 'Lato', sans-serif;
   	font-size: 1.25em;
   	font-weight: 300;
 }
 
 .login {
+  width: 100%;
 	background-color: #FF9800;
 	border-color: #FF9800;
 }
@@ -34,6 +34,7 @@ form {
 }
 
 .create-account {
+  width: 70%;
 	margin-top: 1.5%;
 	background-color: #455A64;
 	border: 2px solid #FF9800;

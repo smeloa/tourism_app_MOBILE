@@ -11,5 +11,20 @@ Template.Start.events({
   'click .create-account'(event, instance) {
     event.preventDefault();
     FlowRouter.go('/createaccount')
+  },
+
+  'submit #loginForm'(event, instance) {
+    event.preventDefault();
+
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    Meteor.loginWithPassword(email, password, function(error) {
+      if (error) {
+        Bert.alert("Email or password are incorrect", 'danger');
+      } else {
+        FlowRouter.go('/usermain');
+      }
+    });
   }
 });
