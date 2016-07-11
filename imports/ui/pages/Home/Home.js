@@ -1,5 +1,5 @@
-import './UserMain.html';
-import './UserMain.css';
+import './Home.html';
+import './Home.css';
 
 import '../../components/NavBar/NavBar.js';
 

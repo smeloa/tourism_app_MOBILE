@@ -9,7 +9,7 @@ import { Bert } from 'meteor/themeteorchef:bert';
 import '../../ui/layouts/MainLayout.js';
 import '../../ui/pages/Start.js';
 import '../../ui/pages/CreateAccount/CreateAccount.js';
-import '../../ui/pages/UserMain/UserMain.js';
+import '../../ui/pages/Home/Home.js';
 
 //Frontend routes
 
@@ -18,7 +18,7 @@ FlowRouter.route('/', {
     title: 'Start',
     action(params) {
       if(Meteor.loggingIn() || Meteor.userId()){
-        FlowRouter.go("/usermain");
+        FlowRouter.go("/home");
       } else {
         BlazeLayout.render("MainLayout", { content: "Start" });
       }
@@ -30,19 +30,19 @@ FlowRouter.route('/createaccount', {
     title: 'Create Account',
     action(params) {
       if(Meteor.loggingIn() || Meteor.userId()){
-        FlowRouter.go("/usermain");
+        FlowRouter.go("/home");
       } else {
         BlazeLayout.render("MainLayout", { content: "CreateAccount" });
       }
     }
 });
 
-FlowRouter.route('/usermain', {
-    name: 'usermain',
-    title: 'User Main',
+FlowRouter.route('/home', {
+    name: 'home',
+    title: 'Home',
     action(params) {
       if(Meteor.loggingIn() || Meteor.userId()){
-        BlazeLayout.render("MainLayout", { content: "UserMain" });
+        BlazeLayout.render("MainLayout", { content: "Home" });
       } else {
         FlowRouter.go("/");
       }

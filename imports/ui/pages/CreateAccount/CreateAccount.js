@@ -56,7 +56,7 @@ Template.CreateAccount.events({
             setTimeout(function() {
               Bert.alert('Welcome ' + Meteor.user().profile.firstname, 'success');
             }, 500);
-            FlowRouter.go('/usermain')
+            FlowRouter.go('/home')
           }
         });
     },
@@ -87,7 +87,7 @@ Template.CreateAccount.events({
             setTimeout(function() {
               Bert.alert("Welcome " + Meteor.user().profile.firstname, 'success');
             }, 500);
-            FlowRouter.go('/usermain')
+            FlowRouter.go('/home')
           }
         });
     }

@@ -23,7 +23,7 @@ Template.Start.events({
       if (error) {
         Bert.alert("Email or password are incorrect", 'danger');
       } else {
-        FlowRouter.go('/usermain');
+        FlowRouter.go('/home');
       }
     });
   }
