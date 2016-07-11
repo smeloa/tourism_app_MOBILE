@@ -6,6 +6,7 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { ReactiveDict } from 'meteor/reactive-dict';
+import { Roles } from 'meteor/alanning:roles'
 
 Template.Start.events({
   'click .create-account'(event, instance) {

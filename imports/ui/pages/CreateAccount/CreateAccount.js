@@ -7,6 +7,7 @@ import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Bert } from 'meteor/themeteorchef:bert';
+import { Roles } from 'meteor/alanning:roles'
 
 Template.CreateAccount.events({
     'click .back' (event, instance) {
@@ -53,6 +54,8 @@ Template.CreateAccount.events({
               }, 500);
             }
           } else {
+            console.log(Meteor.userId());
+            Roles.addUsersToRoles(Meteor.userId(), 'guide');
             setTimeout(function() {
               Bert.alert('Welcome ' + Meteor.user().profile.firstname, 'success');
             }, 500);
@@ -84,6 +87,8 @@ Template.CreateAccount.events({
               }, 500);
             }
           } else {
+            console.log(Meteor.userId());
+            Roles.addUsersToRoles(Meteor.userId(), 'guide');
             setTimeout(function() {
               Bert.alert("Welcome " + Meteor.user().profile.firstname, 'success');
             }, 500);

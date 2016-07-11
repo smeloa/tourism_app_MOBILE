@@ -4,6 +4,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Bert } from 'meteor/themeteorchef:bert';
+import { Roles } from 'meteor/alanning:roles'
 
 //Imports to load initial templates
 import '../../ui/layouts/MainLayout.js';
