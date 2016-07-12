@@ -54,8 +54,14 @@ Template.CreateAccount.events({
               }, 500);
             }
           } else {
-            console.log(Meteor.userId());
-            Roles.addUsersToRoles(Meteor.userId(), 'guide');
+            let userId = Meteor.userId();
+            Meteor.call("addUserExplorerRole", userId, (error, result) => {
+              if(error){
+                  console.log("error", error);
+              } else {
+                  console.log("Success! Welcome explorer!");
+              }
+            });
             setTimeout(function() {
               Bert.alert('Welcome ' + Meteor.user().profile.firstname, 'success');
             }, 500);
@@ -87,8 +93,14 @@ Template.CreateAccount.events({
               }, 500);
             }
           } else {
-            console.log(Meteor.userId());
-            Roles.addUsersToRoles(Meteor.userId(), 'guide');
+            let userId = Meteor.userId();
+            Meteor.call("addUserGuideRole", userId, (error, result) => {
+              if(error){
+                  console.log("error", error);
+              } else {
+                  console.log("Success! Welcome guide!");
+              }
+            });
             setTimeout(function() {
               Bert.alert("Welcome " + Meteor.user().profile.firstname, 'success');
             }, 500);
