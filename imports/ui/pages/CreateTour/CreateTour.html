@@ -1,0 +1,8 @@
+<template name="CreateTour">
+	{{#if isInRole 'guide'}}
+    	<h1>Hello Guide!</h1>
+  	{{else}}
+    	<h1>Wassup Fam?</h1>
+  	{{/if}}
+	{{> NavBar}}
+</template>

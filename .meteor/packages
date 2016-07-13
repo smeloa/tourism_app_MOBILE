@@ -22,6 +22,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 # BASE
 accounts-base
 kadira:flow-router
+arillo:flow-router-helpers
 kadira:blaze-layout
 accounts-password
 alanning:roles
