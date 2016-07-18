@@ -2,6 +2,7 @@ import './Home.html';
 import './Home.css';
 
 import '../../components/NavBar/NavBar.js';
+import '../../components/TourDisplayBox/TourDisplayBox.js';
 
 import { $ } from 'meteor/jquery';
 import { Meteor } from 'meteor/meteor';
