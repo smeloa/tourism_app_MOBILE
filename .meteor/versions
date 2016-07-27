@@ -21,6 +21,7 @@ caching-compiler@1.0.4
 caching-html-compiler@1.0.6
 callback-hook@1.0.8
 check@1.2.1
+chuangbo:cookie@1.1.0
 coffeescript@1.0.17
 dburles:collection-helpers@1.0.4
 ddp@1.2.5
@@ -57,6 +58,10 @@ mdg:validated-method@1.1.0
 mdg:validation-error@0.2.0
 meteor@1.1.14
 meteor-base@1.0.4
+meteorhacks:fast-render@2.14.0
+meteorhacks:inject-data@2.0.0
+meteorhacks:meteorx@1.4.1
+meteorhacks:picker@1.0.3
 meteortoys:allthings@3.0.0
 meteortoys:authenticate@3.0.0
 meteortoys:autopub@3.0.0
