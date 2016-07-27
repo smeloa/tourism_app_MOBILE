@@ -10,7 +10,7 @@ const CitySchema = new SimpleSchema({
   },
   countryCode: {
     type: String,
-    label: "Country name"
+    label: "Country code"
   },
   createdAt: {
     type: Date,
