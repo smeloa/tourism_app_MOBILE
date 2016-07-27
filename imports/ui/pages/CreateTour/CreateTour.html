@@ -1,8 +1,27 @@
 <template name="CreateTour">
 	{{#if isInRole 'guide'}}
-    	<h1>Hello Guide!</h1>
+		<div class="content"  align="center">
+			<h1 class="title">Create a tour</h1>
+			<hr>
+			<form id="createTourForm">
+				<input name="tourname" type="text" placeholder="Tour Name" required>
+				<select name="city" id="city" required>
+					{{#each cities}}
+						<option value={{_id}}>{{cityName}}</option>
+					{{/each}}
+				</select>
+				<input name="date" type="date" required>
+				<label>Start time</label>
+				<input name="starttime" type="time" required>
+				<label>Aprox. length</label>
+				<input name="timelength" type="number" required>
+				<textarea name="tourdescription" rows="5" placeholder="Tour Description" required></textarea>
+			</form>
+		</div>
   	{{else}}
-    	<h1>Wassup Fam?</h1>
+			<div class="content">
+				<h1>Wassup Fam?</h1>
+			</div>
   	{{/if}}
 	{{> NavBar}}
 </template>

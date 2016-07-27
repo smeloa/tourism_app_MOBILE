@@ -1,10 +1,21 @@
-// import { Roles } from 'meteor/alanning:roles';
-// import { Meteor } from 'meteor/meteor';
-// 	​
-// Meteor.startup(function() {
-// 	if(Meteor.roles.find().count() == 0) {
-// 		Roles.createRole('admin');
-// 		Roles.createRole('explorer');
-// 		Roles.createRole('guide');
-// 	}
-// });
+import { Meteor } from 'meteor/meteor';
+
+import { Cities } from '/imports/api/cities/cities.js';
+
+Meteor.startup(function() {
+
+  if (Cities.find().count() == 0){
+      const cities = [
+        {"cityName":"Cartagena", "countryCode":"CO"},
+        {"cityName":"Paris", "countryCode":"FR"},
+        {"cityName":"New York", "countryCode":"US"}
+      ]
+
+      cities.map((city)=>{
+        Cities.insert(city);
+      });
+
+      console.log("Cities seeded")
+  }
+
+});

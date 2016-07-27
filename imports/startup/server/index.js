@@ -1,2 +1,2 @@
-// import './fixtures.js';
-// import './publications.js';
+import './fixtures.js';
+import './register-api.js';
