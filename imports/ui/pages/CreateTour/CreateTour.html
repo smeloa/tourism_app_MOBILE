@@ -6,6 +6,7 @@
 			<form id="createTourForm">
 				<input name="tourname" type="text" placeholder="Tour Name" required>
 				<select name="city" id="city" required>
+					<option value="">Select a city</option>
 					{{#each cities}}
 						<option value={{_id}}>{{cityName}}</option>
 					{{/each}}

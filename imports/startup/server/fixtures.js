@@ -2,6 +2,8 @@ import { Meteor } from 'meteor/meteor';
 
 import { Cities } from '/imports/api/cities/cities.js';
 
+console.log(Cities);
+
 Meteor.startup(function() {
 
   if (Cities.find().count() == 0){
@@ -15,7 +17,7 @@ Meteor.startup(function() {
         Cities.insert(city);
       });
 
-      console.log("Cities seeded")
+      console.log("Cities seeded");
   }
 
 });
