@@ -1,0 +1,11 @@
+.bar-tab {
+  font-family: 'Lato', sans-serif;
+}
+
+.tab-item {
+  color: #FFFFFF !important;
+}
+
+.active {
+  color: #FF9800 !important;
+}

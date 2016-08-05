@@ -1,6 +1,17 @@
 <template name="MyTours">
-	<div class="content">
-		<h1>Hello MyTours</h1>
+	<div class="content" align="center">
+		{{#if isInRole 'guide'}}
+			<h1 class="title">Created Tours</h1>
+			<hr>
+		{{/if}}
+		{{#if isInRole 'explorer'}}
+			<h1 class="title">Booked Tours</h1>
+			<hr>
+		{{/if}}
+		{{#if isInRole 'explorer' 'guide'}}
+			<h1 class="title">Created/Booked Tours</h1>
+			<hr>
+		{{/if}}	
 	</div>
 	{{> NavBar}}
 </template>

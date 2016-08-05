@@ -7,7 +7,21 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 import { Tours } from './tours.js'
 
 Meteor.methods({
-  'events.create'(data){
-    
+  'tours.create'(data){
+    const user = Meteor.user();
+
+    if(Roles.userIsInRole(user, 'guide')) {
+      data.createdBy = this.userId;
+      data.createdAt = new Date();
+      Tours.insert(data);
+    } else {
+      throw new Meteor.Error('not-allowed', "You don't have permission to execute this action");
+    }
   }
 });
+
+if(Meteor.isServer) {
+  const METHOD_NAMES = [
+    'tours.create'
+  ];
+};

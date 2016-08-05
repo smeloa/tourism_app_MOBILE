@@ -31,13 +31,9 @@ const TourSchema = new SimpleSchema({
 	},
 	createdAt: {
 		type: Date,
-		autoValue() {
-			if(this.isInsert){
-				return new Date ();
-			} else {
-				this.unset();
-			}
-		}
+	},
+	createdBy: {
+		type: String,
 	}
 });
 

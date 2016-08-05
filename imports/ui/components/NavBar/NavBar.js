@@ -1,4 +1,5 @@
 import './NavBar.html'
+import './NavBar.css'
 
 import { Meteor } from 'meteor/meteor';
 import { Bert } from 'meteor/themeteorchef:bert';
