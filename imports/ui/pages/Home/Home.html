@@ -2,8 +2,9 @@
 	<div class="content">
 		<h1 class="title">Tours Near You</h1>
 		<hr>
-		{{> TourDisplayBox}}
-		{{> TourDisplayBox}}
+    {{#each tours}}
+  		{{> TourDisplayBox}}
+		{{/each}}
 	</div>
 	{{> NavBar}}
 </template>

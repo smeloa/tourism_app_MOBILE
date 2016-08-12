@@ -1,23 +1,23 @@
 <template name="TourDisplayBox">
 
     <div class="card">
-      <img src="http://lorempixel.com/400/200/city/1/" alt="image" class="">
+      <img src="http://lorempixel.com/400/200/city/2/" alt="image" class="">
       <i id="like" class="share-icon fa fa-heart"></i>
       <i id="book" class="share-icon fa fa-map"></i>
 
       <div class="tour-details">
-        <p>Foodie -- Length: 3 hours -- Date: 17th March</p>
+        <p>Foodie -- Length: {{timelength}} hours -- Date: 17th March</p>
       </div>
 
       <article class="tour-info">
-        <h2><a href="#">Parthenon Visit</a></h2>
+        <h2><a href="#">{{tourname}}</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum...</p>
       </article>
 
       <div class="tourguide-info">
         <img src="http://lorempixel.com/40/40/people/1/" alt="user" class="tourguide-picture">
           <div class="tourguide-name">
-            Created by <a href="#">John Doe</a>
+            Created by <a href="#">{{userCreatedBy}}</a>
           </div>
       </div>
     </div>

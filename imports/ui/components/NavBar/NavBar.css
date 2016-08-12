@@ -2,10 +2,10 @@
   font-family: 'Lato', sans-serif;
 }
 
-.tab-item {
+.tab-item, .bar-icon {
   color: #FFFFFF !important;
 }
 
-.active {
+.active, .active .bar-icon {
   color: #FF9800 !important;
 }
